@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Network Trading LLC | Bulk Commodities Distribution Since 1988</title>
+  <meta name="description" content="Network Trading LLC specializes in providing bulk commodities to farms, feed mills, and pet food manufacturers across the nation. Based in Nerstrand, Minnesota since 1988.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --green-900: #1a3a2a;
+      --green-800: #22472e;
+      --green-700: #2d5a3a;
+      --green-600: #3a7a4f;
+      --green-100: #e8f5e9;
+      --green-50: #f1f8f2;
+      --gold-500: #c8a45a;
+      --gold-400: #d4b76a;
+      --gold-300: #e0ca8a;
+      --neutral-900: #1a1a1a;
+      --neutral-700: #404040;
+      --neutral-500: #6b6b6b;
+      --neutral-300: #b0b0b0;
+      --neutral-100: #f0f0f0;
+      --white: #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--neutral-700);
+      line-height: 1.6;
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Navigation ── */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(26, 58, 42, 0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      transition: background 0.3s;
+    }
+
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--white);
+    }
+
+    .nav-logo-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--gold-500);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--green-900);
+    }
+
+    .nav-logo-text {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s;
+      letter-spacing: 0.02em;
+    }
+
+    .nav-links a:hover { color: var(--gold-400); }
+
+    .nav-cta {
+      background: var(--gold-500) !important;
+      color: var(--green-900) !important;
+      padding: 0.55rem 1.4rem;
+      border-radius: 6px;
+      font-weight: 600 !important;
+      transition: background 0.2s, transform 0.2s !important;
+    }
+
+    .nav-cta:hover {
+      background: var(--gold-400) !important;
+      transform: translateY(-1px);
+    }
+
+    .mobile-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+    }
+
+    .mobile-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--white);
+      margin: 5px 0;
+      transition: 0.3s;
+      border-radius: 2px;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, var(--green-900) 0%, #0f2618 50%, #1a3020 100%);
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 70% 40%, rgba(200, 164, 90, 0.08) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 80% at 20% 80%, rgba(45, 90, 58, 0.3) 0%, transparent 50%);
+    }
+
+    .hero-pattern {
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .hero-inner {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 8rem 2rem 6rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(200, 164, 90, 0.15);
+      border: 1px solid rgba(200, 164, 90, 0.25);
+      padding: 0.4rem 1rem;
+      border-radius: 100px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--gold-400);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.5rem, 5vw, 3.8rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    .hero h1 span {
+      color: var(--gold-400);
+    }
+
+    .hero-text {
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.7);
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+      max-width: 520px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.85rem 2rem;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.25s;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary {
+      background: var(--gold-500);
+      color: var(--green-900);
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-400);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(200, 164, 90, 0.3);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border: 1.5px solid rgba(255,255,255,0.25);
+    }
+
+    .btn-outline:hover {
+      border-color: rgba(255,255,255,0.5);
+      background: rgba(255,255,255,0.05);
+      transform: translateY(-2px);
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    .stat-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 2rem;
+      text-align: center;
+      backdrop-filter: blur(8px);
+      transition: transform 0.3s, border-color 0.3s;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(200, 164, 90, 0.3);
+    }
+
+    .stat-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--gold-400);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-label {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+      font-weight: 500;
+      letter-spacing: 0.03em;
+    }
+
+    /* ── Section base ── */
+    .section {
+      padding: 6rem 2rem;
+    }
+
+    .section-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--green-600);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 3.5vw, 2.75rem);
+      font-weight: 700;
+      color: var(--neutral-900);
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+    }
+
+    .section-subtitle {
+      font-size: 1.1rem;
+      color: var(--neutral-500);
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* ── About ── */
+    .about { background: var(--white); }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+
+    .about-image {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      background: linear-gradient(135deg, var(--green-100), var(--green-50));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about-image-icon {
+      font-size: 6rem;
+      opacity: 0.6;
+    }
+
+    .about-accent {
+      position: absolute;
+      bottom: -1rem;
+      right: -1rem;
+      width: 120px;
+      height: 120px;
+      background: var(--gold-500);
+      border-radius: 16px;
+      opacity: 0.15;
+    }
+
+    .about-content .section-label { text-align: left; }
+    .about-content .section-title { text-align: left; }
+
+    .about-text {
+      font-size: 1.05rem;
+      color: var(--neutral-500);
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+
+    .about-features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .about-feature {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.75rem 1rem;
+      background: var(--green-50);
+      border-radius: 10px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--green-800);
+    }
+
+    .about-feature-icon {
+      width: 32px;
+      height: 32px;
+      background: var(--green-700);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .about-feature-icon svg {
+      width: 16px;
+      height: 16px;
+      stroke: var(--white);
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    /* ── Commodities ── */
+    .commodities {
+      background: var(--green-50);
+    }
+
+    .commodity-categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .commodity-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 2rem;
+      border: 1px solid rgba(0,0,0,0.06);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .commodity-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+    }
+
+    .commodity-card-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .commodity-icon {
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, var(--green-700), var(--green-600));
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      flex-shrink: 0;
+    }
+
+    .commodity-card h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--neutral-900);
+    }
+
+    .commodity-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .commodity-list li {
+      background: var(--green-50);
+      padding: 0.35rem 0.85rem;
+      border-radius: 100px;
+      font-size: 0.82rem;
+      color: var(--green-800);
+      font-weight: 500;
+    }
+
+    /* ── Team ── */
+    .team { background: var(--white); }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .team-card {
+      background: var(--white);
+      border-radius: 20px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      border: 1px solid rgba(0,0,0,0.06);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .team-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+    }
+
+    .team-avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--green-700), var(--green-600));
+      margin: 0 auto 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      color: var(--white);
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+    }
+
+    .team-card h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--neutral-900);
+      margin-bottom: 0.25rem;
+    }
+
+    .team-role {
+      font-size: 0.85rem;
+      color: var(--green-600);
+      font-weight: 500;
+      margin-bottom: 1.25rem;
+    }
+
+    .team-phone {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.2rem;
+      background: var(--green-50);
+      border-radius: 100px;
+      font-size: 0.9rem;
+      color: var(--green-800);
+      font-weight: 500;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .team-phone:hover {
+      background: var(--green-100);
+    }
+
+    .team-phone svg {
+      width: 16px;
+      height: 16px;
+      stroke: var(--green-700);
+      fill: none;
+      stroke-width: 2;
+    }
+
+    /* ── Contact ── */
+    .contact {
+      background: var(--green-900);
+      color: var(--white);
+    }
+
+    .contact .section-label { color: var(--gold-400); }
+    .contact .section-title { color: var(--white); }
+    .contact .section-subtitle { color: rgba(255,255,255,0.6); }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+
+    .contact-info-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .contact-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 1.75rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1.25rem;
+      transition: border-color 0.3s;
+    }
+
+    .contact-card:hover {
+      border-color: rgba(200, 164, 90, 0.3);
+    }
+
+    .contact-card-icon {
+      width: 48px;
+      height: 48px;
+      background: rgba(200, 164, 90, 0.15);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .contact-card-icon svg {
+      width: 22px;
+      height: 22px;
+      stroke: var(--gold-400);
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .contact-card h4 {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.5);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.4rem;
+    }
+
+    .contact-card p, .contact-card a {
+      font-size: 1.05rem;
+      color: var(--white);
+      text-decoration: none;
+      line-height: 1.6;
+    }
+
+    .contact-card a:hover { color: var(--gold-400); }
+
+    .contact-form {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
+      padding: 2.5rem;
+    }
+
+    .contact-form h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 0.4rem;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 8px;
+      color: var(--white);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      transition: border-color 0.2s;
+      outline: none;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: rgba(255,255,255,0.3);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: var(--gold-500);
+    }
+
+    .form-group textarea { resize: vertical; min-height: 100px; }
+
+    .form-group select option { background: var(--green-900); color: var(--white); }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .btn-submit {
+      width: 100%;
+      padding: 0.9rem;
+      background: var(--gold-500);
+      color: var(--green-900);
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .btn-submit:hover {
+      background: var(--gold-400);
+      transform: translateY(-2px);
+    }
+
+    /* ── Footer ── */
+    .footer {
+      background: #0f1f17;
+      padding: 3rem 2rem;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      text-decoration: none;
+      color: var(--white);
+    }
+
+    .footer-logo-icon {
+      width: 32px;
+      height: 32px;
+      background: var(--gold-500);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--green-900);
+    }
+
+    .footer-logo-text {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .footer-copy {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.4);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    .footer-links a {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--gold-400); }
+
+    /* ── Animations ── */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 968px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding-top: 7rem;
+      }
+
+      .hero-text { margin: 0 auto 2.5rem; }
+      .hero-buttons { justify-content: center; }
+      .hero-stats { max-width: 400px; margin: 0 auto; }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .about-content .section-label,
+      .about-content .section-title { text-align: center; }
+      .about-text { text-align: center; }
+
+      .team-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
+
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        background: var(--green-900);
+        padding: 1.5rem 2rem;
+        border-top: 1px solid rgba(255,255,255,0.08);
+        gap: 1rem;
+      }
+      .mobile-toggle { display: block; }
+
+      .section { padding: 4rem 1.5rem; }
+
+      .commodity-categories { grid-template-columns: 1fr; }
+
+      .about-features { grid-template-columns: 1fr; }
+
+      .form-row { grid-template-columns: 1fr; }
+
+      .footer-inner {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <div class="nav-logo-icon">NT</div>
+        <span class="nav-logo-text">Network Trading</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#commodities">Commodities</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+      </ul>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-pattern"></div>
+    <div class="hero-inner">
+      <div>
+        <div class="hero-badge">Established 1988</div>
+        <h1>Trusted Bulk <span>Commodity</span> Distribution</h1>
+        <p class="hero-text">Network Trading LLC specializes in providing bulk commodities to farms, feed mills, and pet food manufacturers across the nation from Nerstrand, Minnesota.</p>
+        <div class="hero-buttons">
+          <a href="#commodities" class="btn btn-primary">View Commodities</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <div class="stat-number">38+</div>
+          <div class="stat-label">Years of Experience</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">40+</div>
+          <div class="stat-label">Commodity Products</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Miles South of MPLS</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">3</div>
+          <div class="stat-label">Expert Team Members</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section about" id="about">
+    <div class="section-inner">
+      <div class="about-grid">
+        <div class="about-image fade-up">
+          <div class="about-image-icon">🌾</div>
+          <div class="about-accent"></div>
+        </div>
+        <div class="about-content fade-up">
+          <span class="section-label">About Us</span>
+          <h2 class="section-title">Rooted in Agriculture, Driven by Service</h2>
+          <p class="about-text">Since 1988, Network Trading LLC has been a trusted partner in the bulk commodities industry. Located in Nerstrand, Minnesota — approximately 50 miles south of Minneapolis — we connect producers with the quality feed ingredients they need to succeed.</p>
+          <p class="about-text">Our experienced team works closely with farms, feed mills, and pet food manufacturers across the country, delivering reliable supply chains and competitive pricing on a comprehensive range of agricultural commodities.</p>
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              Nationwide Delivery
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              Competitive Pricing
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              Quality Assured
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              Organic Options
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Commodities -->
+  <section class="section commodities" id="commodities">
+    <div class="section-inner">
+      <div class="section-header fade-up">
+        <span class="section-label">What We Offer</span>
+        <h2 class="section-title">Our Commodity Products</h2>
+        <p class="section-subtitle">We provide a comprehensive range of bulk commodities to meet the diverse needs of the agricultural and pet food industries.</p>
+      </div>
+      <div class="commodity-categories">
+        <div class="commodity-card fade-up">
+          <div class="commodity-card-header">
+            <div class="commodity-icon">🌿</div>
+            <h3>Forage & Fiber</h3>
+          </div>
+          <ul class="commodity-list">
+            <li>Alfalfa Pellets</li>
+            <li>Beet Pulp Pellets</li>
+            <li>Beet Pulp Shreds</li>
+            <li>Cottonseed Hulls</li>
+            <li>Soy Hulls</li>
+            <li>Screenings</li>
+          </ul>
+        </div>
+        <div class="commodity-card fade-up">
+          <div class="commodity-card-header">
+            <div class="commodity-icon">🌾</div>
+            <h3>Grains & Cereals</h3>
+          </div>
+          <ul class="commodity-list">
+            <li>Barley</li>
+            <li>Corn</li>
+            <li>Corn Gluten Feed</li>
+            <li>Corn Gluten Meal</li>
+            <li>Hominy Feed</li>
+            <li>Oats</li>
+            <li>Wheat Middlings</li>
+            <li>Wheat Red Dog</li>
+          </ul>
+        </div>
+        <div class="commodity-card fade-up">
+          <div class="commodity-card-header">
+            <div class="commodity-icon">🫘</div>
+            <h3>Protein & Oilseeds</h3>
+          </div>
+          <ul class="commodity-list">
+            <li>Canola Meal</li>
+            <li>Cottonseed Meal</li>
+            <li>Cottonseed Whole</li>
+            <li>Flaxseed</li>
+            <li>Linseed Meal</li>
+            <li>Meat &amp; Bone Meal</li>
+            <li>Soybean Meal</li>
+            <li>Soybeans</li>
+            <li>Sunflower Meal</li>
+          </ul>
+        </div>
+        <div class="commodity-card fade-up">
+          <div class="commodity-card-header">
+            <div class="commodity-icon">🌱</div>
+            <h3>Pulses & Specialty</h3>
+          </div>
+          <ul class="commodity-list">
+            <li>Chickpeas</li>
+            <li>Peas</li>
+            <li>Rice Bran</li>
+            <li>Rice Hulls</li>
+            <li>Dried Distillers Grain</li>
+            <li>Sunflower Seeds</li>
+          </ul>
+        </div>
+        <div class="commodity-card fade-up">
+          <div class="commodity-card-header">
+            <div class="commodity-icon">🏷️</div>
+            <h3>Organic Ingredients</h3>
+          </div>
+          <ul class="commodity-list">
+            <li>Organic Corn</li>
+            <li>Organic Soybeans</li>
+            <li>Organic Soybean Meal</li>
+            <li>Organic Wheat</li>
+            <li>Organic Oats</li>
+            <li>Organic Barley</li>
+          </ul>
+        </div>
+        <div class="commodity-card fade-up">
+          <div class="commodity-card-header">
+            <div class="commodity-icon">🛢️</div>
+            <h3>Oils & Fats</h3>
+          </div>
+          <ul class="commodity-list">
+            <li>Canola Oil</li>
+            <li>Soybean Oil</li>
+            <li>Corn Oil</li>
+            <li>Sunflower Oil</li>
+            <li>Cottonseed Oil</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact" id="contact">
+    <div class="section-inner">
+      <div class="section-header fade-up">
+        <span class="section-label">Get in Touch</span>
+        <h2 class="section-title">Ready to Work Together?</h2>
+        <p class="section-subtitle">Whether you need a quote, have questions about our products, or want to discuss your supply needs, we're here to help.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info-cards fade-up">
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:info@networktrading.com">info@networktrading.com</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:5073340348">507.334.0348</a></p>
+              <p><a href="tel:5073340023">507.334.0023</a></p>
+              <p><a href="tel:5073341586">507.334.1586</a></p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            </div>
+            <div>
+              <h4>Fax</h4>
+              <p>507.334.0024</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h4>Location</h4>
+              <p>Nerstrand, Minnesota</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form fade-up">
+          <h3>Send Us a Message</h3>
+          <form id="contactForm" onsubmit="handleSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="interest">I'm Interested In</label>
+              <select id="interest">
+                <option value="">Select a topic...</option>
+                <option value="quote">Request a Quote</option>
+                <option value="products">Product Information</option>
+                <option value="organic">Organic Commodities</option>
+                <option value="other">Other Inquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" placeholder="Tell us about your needs..." rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="#" class="footer-logo">
+        <div class="footer-logo-icon">NT</div>
+        <span class="footer-logo-text">Network Trading</span>
+      </a>
+      <p class="footer-copy">&copy; 2026 Network Trading LLC. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#commodities">Commodities</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.getElementById('mobileToggle').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+
+    // Close mobile menu on link click
+    document.querySelectorAll('.nav-links a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.getElementById('navLinks').classList.remove('open');
+      });
+    });
+
+    // Scroll animations
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    document.querySelectorAll('.fade-up').forEach(function(el) {
+      observer.observe(el);
+    });
+
+    // Form submission
+    function handleSubmit(e) {
+      e.preventDefault();
+      var btn = e.target.querySelector('.btn-submit');
+      btn.textContent = 'Message Sent!';
+      btn.style.background = '#4caf50';
+      setTimeout(function() {
+        btn.textContent = 'Send Message';
+        btn.style.background = '';
+        e.target.reset();
+      }, 3000);
+    }
+  </script>
+</body>
+</html>
